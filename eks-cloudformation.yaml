@@ -19,7 +19,7 @@ Resources:
               PublicAccessCidrs: [ "0.0.0.0/0" ]
     EKSNodegroup:
       Type: 'AWS::EKS::Nodegroup'
-    Properties:
+      Properties:
         ClusterName: demo-cluster
         NodeRole: "arn:aws:iam::388328004932:role/AWSEKSRole"
         

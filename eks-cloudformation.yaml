@@ -20,18 +20,9 @@ Resources:
     NodeGroup:
       Type: AWS::EKS::Nodegroup
       Properties: 
-        ClusterName: !Ref Cluster
-        InstanceTypes:
-          - !Ref NodeInstanceClass
         NodegroupName: laxmi-eks-nodegroup
-        NodeRole: !GetAtt NodeInstanceRole.Arn
-        ScalingConfig: 
-          MinSize: !Ref ClusterMinSize
-          DesiredSize: !Ref ClusterDesiredSize
-          MaxSize: !Ref ClusterMaxSize
-        Subnets: 
-          - !Ref AppSubnetID1
-          - !Ref AppSubnetID2 
+        NodeRole: "arn:aws:iam::388328004932:role/AWSEKSRole"
+        
         
                     
 

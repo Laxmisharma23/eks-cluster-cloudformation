@@ -5,7 +5,7 @@ Resources:
     EKSCluster:
         Type: AWS::EKS::Cluster
         Properties:
-            Name: laxmi-cluster
+            Name: laxmi-eks-cluster
             Version: "1.25"
             RoleArn: "arn:aws:iam::388328004932:role/AWSEKSRole"
             ResourcesVpcConfig:

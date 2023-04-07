@@ -22,7 +22,7 @@ Resources:
       Properties:
         ClusterName: laxmi-cluster-node
         NodegroupName: laxmi-node
-        NodeRole: 'arn:aws:iam::012345678910:role/eksInstanceRole'
+        NodeRole: arn:aws:iam::388328004932:role/eks-node-group
         ScalingConfig:
           MinSize: 3
           DesiredSize: 5

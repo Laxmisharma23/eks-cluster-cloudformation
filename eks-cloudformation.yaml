@@ -10,7 +10,7 @@ Resources:
             RoleArn: "arn:aws:iam::388328004932:role/AWSEKSRole"
             ResourcesVpcConfig:
                 SecurityGroupIds:
-                - sg-0d8315f2e7a43714e
+                - sg-02a8565dd36008fdf
                 SubnetIds:
                 - subnet-cb2905ac 
                 EndpointPublicAccess: true

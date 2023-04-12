@@ -5,7 +5,7 @@ Resources:
   Cluster:
     Type: AWS::EKS::Cluster
     Properties:
-      Name: laxmiEKSCluster
+      Name: laxmi-EKS-Cluster
       RoleArn: arn:aws:iam::388328004932:role/AWSEKSRole
       Version: "1.25"
       ResourcesVpcConfig:
@@ -18,7 +18,7 @@ Resources:
     Type: AWS::EKS::Nodegroup
     DependsOn: Cluster
     Properties:
-      ClusterName: laxmiEKSCluster
+      ClusterName: laxmi-EKS-Cluster
       NodegroupName: laxmiNodegroup
       InstanceTypes:
         - t2.micro

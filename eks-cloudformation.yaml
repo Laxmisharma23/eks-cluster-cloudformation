@@ -19,6 +19,7 @@ Resources:
                 PublicAccessCidrs: [ "0.0.0.0/0" ]
     EKSNodegroup:
       Type: 'AWS::EKS::Nodegroup'
+      DependsOn: EKSCluster
       Properties:
         ClusterName: laxmi-cluster-node
         NodegroupName: laxmi-node
